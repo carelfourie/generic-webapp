@@ -1,0 +1,20 @@
+logging:
+  level:
+    genericwebapp: debug
+    io.undertow: debug
+    org.springframework: error
+
+server:
+  compression:
+    enabled: true
+  http2:
+    enabled: true
+  port: 8081
+  undertow:
+    accesslog:
+      enabled: true
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:32768/generic-webapp
